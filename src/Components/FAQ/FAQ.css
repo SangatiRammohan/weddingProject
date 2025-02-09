@@ -1,0 +1,32 @@
+.faq{
+    margin: 30px;
+}
+.question{
+    margin: 20px;
+}
+
+.questionHeader button{
+    width: 80vw;
+}
+.item{
+    border-radius: 10px;
+    width: 80vw;
+    margin: 2px;
+}
+.questionAnswer{
+    width: 80vw;
+    outline: none;
+    font-size: large;
+}
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+    outline: none !important;
+}
+.accordion-button {
+    background-color:#FFFBF0 !important; 
+}
+
+
+
+
