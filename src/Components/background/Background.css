@@ -11,10 +11,11 @@
     padding: 10px;
     border-radius: 20px;
   border: none;
+  color: black;
    
 }
 .Mandaps button:hover{
-    background-color: rgb(197, 197, 62);
+    background-color: gold;
 }
 
 .venu{
@@ -27,11 +28,11 @@
     height: 40px;
 }
 
-.ramhere{
+/* .ramhere{
     background-image: url(../../../public/bg.png);
     background-size: contain;
     
-}
+} */
 .ramhere {
     display: flex;
    

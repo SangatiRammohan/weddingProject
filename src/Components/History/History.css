@@ -1,0 +1,241 @@
+.parent{
+    display: flex;
+    justify-content: center;
+    /* background-image: url(./images/leftFlower.png),url(./images/centreflower.png),url(./images/rightflower.png); */
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    /* background-repeat: repeat-y; */
+    background-size: 217px,535px,217px;
+    background-position: left center,center,right center;
+    background-color: black;
+    
+}
+
+.secondPart div{
+   font-family: lora;
+   /* font-size: 20px; */
+   display: flex;
+   justify-content: flex-start;
+   
+}
+.info{
+    display: flex;
+    justify-content:space-between;
+    gap:10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+}
+.credentials{
+    width:305px
+
+}
+#name{
+    color: white;
+    font-size: 16px;
+    margin-left: 10px;
+}
+#nametag{
+    color:#898989;
+    font-size: 16px;
+    font-family: lora;
+    margin-left: 10px;
+}
+#account{
+    color: white;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.contains {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0; /* Remove unnecessary margin */
+}
+
+
+.align {
+    background: rgba(255, 250, 234, 1);
+    display: flex;
+    justify-content: space-between;
+    /* padding: 5px; */
+    color: #808080;
+   
+}
+
+.text {
+    display: "flex";
+}
+
+#cards {
+    border: none;
+    border-radius: 7.26px;
+}
+
+.horizontal {
+    display: flex;
+    align-items: center;    
+    /* gap: 17.3px; */
+    width: 912.9px;
+    justify-content: center;
+    padding-bottom: 17.3px
+}
+
+#cards_text {
+    display: flex;
+    gap: 15px;
+}
+#small_text {
+    font-size: 9.07px;
+    color: #cda434;
+    padding-left: 20px;
+}
+#time {
+    font-size: 9.07px;
+    color: #808080;
+    padding-right: 20px;
+    display: flex;
+    gap:5px;
+    justify-content: space-between;
+}
+
+.containers {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #cda434;
+    border-radius: 7.26px;
+    margin-left: 30px; 
+    background-color: #1e1515;
+    /* background-color: black; */
+}
+/* black card stylings */
+.blackCard{
+    width: 223.23px;
+    height: 750px;
+    background-color: #2b2b2b;
+    border-radius: 7.26px;
+    border: 0.91px solid #808080;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;    
+}
+#part{
+    color: aliceblue; 
+    font-size:11.8px;
+    text-align: left;
+    padding-left:12px; 
+    font-size:11.8px;
+    font-weight:700;
+    margin-top:5px;
+    margin-bottom:5px;
+    font-family:helvetica;
+    padding-bottom:0.6px;
+    padding-top:0.6px;
+}
+.section{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center 
+}
+.img2{
+    border: none;
+     border-radius: 4.12px
+}
+#part2{
+    display:flex;
+    flex-direction:column;
+    gap:16.1px;
+    justify-content:center;
+    align-items:center;
+    margin-top:16.1px;
+}
+.accordianset{
+    display: flex;
+    flex-direction: column;
+    gap:15.3px;
+    
+}
+#buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px
+}
+#quality{
+    background-color:#2b2b2b;
+    border:0.91px solid #808080;
+    border-radius:7.26px;
+    font-size:11.8px;
+    font-family:helvetica;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:5px;
+    padding-bottom:5px
+}
+#fast{
+    background-color:#2b2b2b;
+    border:0.91px solid #cda434;
+    border-radius:7.26px;
+    font-size:11.8px;
+    font-family:helvetica;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:5px;
+    padding-bottom:5px
+}
+#part1{
+    color: aliceblue; 
+    font-size:11.8px;
+    text-align: left;
+    padding-left:12px; 
+    font-size:11.8px;
+    font-weight:700;
+    margin-bottom:5px;
+    font-family:helvetica;
+    padding-bottom:0.6px;
+    
+}
+.media{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.accordion{
+    color: #808080;
+}
+.accordion-item{
+    background-color: transparent;
+     width: 194.19px ;
+     height:42.15;
+     padding:0px;
+}
+.accordion-body{
+    color:white;
+}
+.accordion-button{
+    width: 194.19px
+}
+.numbers{
+    display: flex;
+    gap:7.26px;
+    justify-content: center;
+    margin-left: 15px;
+}
+/* #generate{
+    background:linear-gradient(#d4af37,#a37611);
+    width:194px;
+    border-radius: 10.13px;
+    height: 36.5px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap:15px;
+    margin-left: 15px;
+    align-items: center;
+} */

@@ -52,7 +52,7 @@ const Footer = () => {
       <h3>Follow Us</h3>
       <div className="social-icons">
       <div class="location">
-      <img src="./images/xx.png" width={24} height={24}></img> 
+      <img src="./images/xx.png" width={35} height={24}></img> 
       </div>
         <div class="location">
           <img src="./images/linkedin.png" width={24} height={24}></img><a href="#">LinkedIn</a>

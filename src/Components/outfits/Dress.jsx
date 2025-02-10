@@ -14,11 +14,23 @@ const Bride = [
     styel: "KANJIVARAM SAREE",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
   },
+
   {
-    image: "../../../outfit3.png",
-    styel: "SHERWANI",
+    image: "../../../outfit4.png",
+    styel: "DHOTI KURTA",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
   },
+  {
+    image: "../../../outfit1.png",
+    styel: "RED LEHENGA",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+  },
+  {
+    image: "../../../outfit2.png",
+    styel: "KANJIVARAM SAREE",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+  },
+
   {
     image: "../../../outfit4.png",
     styel: "DHOTI KURTA",

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Pose.css";
+import "../background/Background.css";
 
 
 

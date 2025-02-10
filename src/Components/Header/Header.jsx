@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./Header.css"
 import { useNavigate } from "react-router-dom";
 
-
-const Header = ({onNavigate}) => {
+const Header = ({}) => {
    const navigate = useNavigate();
+   
    return (
 
       <>
@@ -13,37 +13,47 @@ const Header = ({onNavigate}) => {
                <nav class="nav">
                   <div class="title"> <p>SHAADIPIX</p></div>
                   <div class="navbar">
-                     <button>Home</button>
-                     <button>About</button>
-                     <button>Services</button>
-                     <button>Contact</button>
-                     <button id="login">Login</button>
+                  <ul>
+                        <li id="#">HOME</li>
+                        <li >ABOUT</li>
+                        <li>SERVICES</li>
+                        <li>CONTACT</li>
+                        <li id="login" onClick={()=>navigate("Login")}>LOGIN</li>
+                     </ul>
                   </div>
                </nav>
                <div class="banner">
-                  <p>THE PORTRAITS OF LIFETIME, CREATED INSTANTLY</p>
-                  <span id="tag">Upload your photo and get high definition wedding pictures in dream</span>
-                  <span class="tagline">locations,outfits, and poses - without a real photoshoot</span>
+                  <h2>THE PORTRAITS OF LIFETIME, CREATED INSTANTLY</h2>
+                  <p >Upload your photo and get high definition wedding pictures in dream</p>
+                  <p >locations,outfits, and poses - without a real photoshoot</p>
+                  <button id="free" onClick={() => navigate("/page")}>Try ShaadiPix for Free <img src='../../../public/images/sparkle.png' alt="" /></button>
                </div>
-                  <div>
-                   <button id="free" onClick={onNavigate}>Try ShaadiPix for Free</button>
-                      
-                     
-                  </div>
+                
 
                <div class="Four_cards">
 
 
                   <div class="cards_container">
-                     <img id="img1" src="./images/couple.jpg" width={452}></img>
-                     <img id="img1" src="./images/couple.jpg" width={452}></img>
-                     <img id="img1" src="./images/couple.jpg" width={452}></img>
-                     <img id="img1" src="./images/couple.jpg" width={452}></img>
+                     <img id="img1" src="./images/couple.jpg" ></img>
+                     <img id="img1" src="./images/couple.jpg" ></img>
+                     <img id="img1" src="./images/couple.jpg" ></img>
+                     <img id="img1" src="./images/couple.jpg" ></img>
 
                   </div>
-                  <div><img id="img2" src="./images/marriage.jpg" width={452} height={452}></img></div>
+                  <div><img id="img2" src="./images/marriage.jpg"></img></div>
                </div>
             </header>
+
+
+
+
+
+
+
+
+
+
+
             <div id="cardbox">
                <div id="tools">
                   <div><img src="./images/sparkle.png" width={53} height={53}></img></div>
@@ -81,6 +91,19 @@ const Header = ({onNavigate}) => {
                   </div>
                </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div>
                <p class="header2">THE PORTRAITS OF A LIFETIME,CREATED INSTANTLY </p>
             </div>
@@ -139,6 +162,8 @@ const Header = ({onNavigate}) => {
                   </div>
                </div>
             </div>
+
+
             <div class="black_card">
                <span id="part" >User Photos</span>
                <div>
@@ -155,25 +180,6 @@ const Header = ({onNavigate}) => {
                      <img src="./images/accordian.png" width={194.1} height={42.1}></img>
                      <img src="./images/accordian.png" width={194.1} height={42.1}></img>
                   </div>
-                  {/* <div>
-                        <div class="accordion" id="accordionExample" >
-                           <div class="accordion-item">
-                              <h2 class="accordion-header" id="headingOne">
-                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style={{ width: "194.19px" }} >
-                                    <div><p id="background">Background</p>
-                                       <span id="texts">Lore ipsum do dira sum</span>
-                                    </div>
-                                 </button>
-                              </h2>
-                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                 <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong><code>.accordion-body</code>, though the transition does limit overflow.
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div> */}
-
                </div>
                <span id="part" >Generation Mode</span>
                <div id="buttons">

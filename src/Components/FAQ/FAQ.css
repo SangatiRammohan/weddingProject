@@ -1,22 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cinzel;
+  }
 .faq{
-    margin: 30px;
+    margin-top: 80px;
+    text-align: center;
 }
 .question{
-    margin: 20px;
+    margin: 70px;
 }
-
+.questionHeader{
+    width: 90vw;
+}
 .questionHeader button{
-    width: 80vw;
+    overflow: hidden;
+    width:100%;
 }
 .item{
     border-radius: 10px;
-    width: 80vw;
+    width: 100%;
     margin: 2px;
+    border:none;
+    text-align: center;
 }
 .questionAnswer{
     width: 80vw;
     outline: none;
     font-size: large;
+    color: black;
 }
 .accordion-button:focus,
 .accordion-button:not(.collapsed) {

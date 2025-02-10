@@ -65,14 +65,14 @@ function Background() {
 
   return (
     <>
-      <div className="Header">
+     {/* <div className="Header">
         <h1>Shadipix</h1>
         <div className="UserName">10kCoders</div>
         <div className="Coins">
           <span>100</span>
           <button className="tokens">Add Tokens</button>
         </div>
-      </div>
+      </div> */}
       <div className="mainBackground">
         <div className="venu">
           <h2>VENUE</h2>

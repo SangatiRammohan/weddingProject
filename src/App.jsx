@@ -1,69 +1,69 @@
-// import { useState } from 'react'
-// import './App.css'
-// import './../node_modules/bootstrap/dist/css/bootstrap.min.css'
-// import Header from './Components/Header/Header'
-// import Pricing from './Components/Pricing/Pricing'
-// import Footer from './Components/Footer/Footer'
-// import Outfit from './Components/Outfit/Outfit'
-// import FAQ from './Components/FAQ/FAQ.JSX'
+
 import Page from './Page'
-// import { Route, Router, Routes } from 'react-router-dom'
-// // import WeddingPhoto from './Components/weddingPhoto'
-
-
+// import { useState } from "react";
+// import "./App.css";
+// import "bootstrap/dist/css/bootstrap.min.css"; 
+// import Header from "./Components/Header/Header";
+// import Pricing from "./Components/Pricing/Pricing";
+// import Footer from "./Components/Footer/Footer";
+// import Outfit from "./Components/Outfit/Outfit";
+// import FAQ from "./Components/FAQ/FAQ";
 
 // function App() {
-//   const [count, setCount] = useState(0)
+//   const [showPage, setShowPage] = useState(false); 
 
 //   return (
 //     <>
-//       <Header/>
-//       <Outfit/>
-//       <Pricing/>
-//       <FAQ/>
-//       <Footer/>
-//       <Routes>
-//     <Route path="/Page" element={<Page/>}></Route>
-//   </Routes>
+//     {showPage ? (
+//       <Page /> 
+//     ) : (
+//       <>
      
+//         <Header onNavigate={() => setShowPage(true)} />
+//         <Outfit />
+//         <Pricing />
+//         <FAQ />
+//         <Footer />
 //       </>
-  
-   
-//   )
+//     )}
+//   </>
+//   );
 // }
 
-// export default App
+// export default App;
 
-
-
-
-import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap Import
+import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Components/Header/Header";
 import Pricing from "./Components/Pricing/Pricing";
 import Footer from "./Components/Footer/Footer";
 import Outfit from "./Components/Outfit/Outfit";
 import FAQ from "./Components/FAQ/FAQ";
-
+import PictureGeneration from './Components/PictureGeneration/PictureGeneration'
+import Register from './Components/register/Register'
+import Login from './Components/Login/LoginForm';
+import History from './Components/History/History'
 function App() {
-  const [showPage, setShowPage] = useState(false); // ✅ State to control content
-
   return (
-    <>
-    {showPage ? (
-      <Page /> // ✅ Show Page component when button is clicked
-    ) : (
-      <>
-        {/* ✅ Pass the state setter function to Header */}
-        <Header onNavigate={() => setShowPage(true)} />
-        <Outfit />
-        <Pricing />
-        <FAQ />
-        <Footer />
-      </>
-    )}
-  </>
+    <Routes>
+      <Route path="/" element={
+        <>
+          <Header />
+          <Outfit />
+          <Pricing />
+          <FAQ />
+          <Footer />
+        </>
+      } />
+      <Route path="/page" element={<Page />} /> 
+      <Route path="/picture" element={<PictureGeneration/>} />
+      <Route path='/Login' element={<Login/>} />
+      <Route path="/register" element={<Register/>}/>
+      <Route path='/history' element={<History/>}></Route>
+    </Routes>
+
+    
   );
 }
 

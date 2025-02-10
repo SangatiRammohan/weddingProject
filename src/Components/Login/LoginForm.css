@@ -1,0 +1,41 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    
+}
+.Login{
+     width: 400px;
+     height: 500px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     top: 100px;
+     left: 35%;
+     gap: 10px;
+     background:linear-gradient(#d4af37,#a37611);
+     border-radius: 20px;
+}
+.LoginForm{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     background:linear-gradient(#d4af37,#a37611);
+}
+.LoginForm input{
+     outline: none;
+     border: none;
+     padding: 10px;
+}
+.LoginForm button{
+     border: none;
+}
+.LoginForm button:hover{
+     background-color: #fff7de;
+     color:#a37611;
+}
+.Login p a{
+     color: #fff7de;
+}
