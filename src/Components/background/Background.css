@@ -14,8 +14,11 @@
   color: black;
    
 }
-.Mandaps button:hover{
+.Mandaps button:active{
     background-color: gold;
+}
+.Mandaps button:focus{
+  background-color: gold;
 }
 
 .venu{
@@ -27,32 +30,33 @@
     width: 40px;
     height: 40px;
 }
-
-/* .ramhere{
-    background-image: url(../../../public/bg.png);
-    background-size: contain;
-    
-} */
 .ramhere {
     display: flex;
    
     padding: 20px;
   }
 
+
+
   .mandapasBgimages {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px; 
-    justify-content: center; 
-    max-width: 1200px;
-  }
-  
+    overflow-x: auto;  
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    gap: 10px;
+    max-width: 100%;
+    white-space: nowrap; 
+    padding: 10px;
+}
+
+.mandapasBgimages::-webkit-scrollbar {
+    display: none;
+}
 
   .mandap-card {
-    width: 300px; 
-    text-align: center;
+    width: 350px; 
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     background: white;

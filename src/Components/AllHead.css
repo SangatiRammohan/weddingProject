@@ -11,6 +11,13 @@
      align-items: center;
      align-content: center; 
 }
+.Loginname{
+    cursor: pointer;
+}
+.Loginname img{
+    width: 20px;
+
+}
 #coins button{
     border: none;
     background-color: #cda434;

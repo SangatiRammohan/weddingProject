@@ -1,12 +1,23 @@
 import React, { useState } from "react";
+import { useRef } from "react";
 import "./Background.css";
 
-
-
-
-
-
 const Mandaps = [
+  {
+    image: '../../../public/North.png',
+    styel: "NORTH INDIAN MANDAPS",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+  },
+  {
+    image: "../../../south.png",
+    styel: "SOUTH INDIAN MANDAPS",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+  },
+  {
+    image: "../../../beach.png",
+    styel: "BEACHSIDE MANDAPS",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+  },
   {
     image: '../../../public/North.png',
     styel: "NORTH INDIAN MANDAPS",
@@ -60,19 +71,37 @@ const Dreamy = [
   }
 ];
 
-function Background() {
+function Background(data) {
   const [activeComponent, setActiveComponent] = useState("Component1");
+  const scrollContainer = useRef(null);
 
+  const handleScroll = (event) => {
+    event.preventDefault(); // Prevent default vertical scrolling
+    if (scrollContainer.current) {
+      scrollContainer.current.scrollLeft += event.deltaX *2; // Scroll horizontally
+    }
+  };
+
+  
+const MandapList = ({ data }) => {
+  return (
+    <div className="mandapasBgimages" 
+    ref={scrollContainer}
+      onWheel={handleScroll}>
+      {data.map((item, index) => (
+        <span key={index} className="mandap-card">
+          <img src={item.image} alt={item.styel} className="mandap-image" />
+          <div className="mandap-details">
+            <h3>{item.styel}</h3>
+            <p>{item.description}</p>
+          </div>
+        </span>
+      ))}
+    </div>
+  );
+};
   return (
     <>
-     {/* <div className="Header">
-        <h1>Shadipix</h1>
-        <div className="UserName">10kCoders</div>
-        <div className="Coins">
-          <span>100</span>
-          <button className="tokens">Add Tokens</button>
-        </div>
-      </div> */}
       <div className="mainBackground">
         <div className="venu">
           <h2>VENUE</h2>
@@ -95,20 +124,6 @@ function Background() {
   );
 }
 
-const MandapList = ({ data }) => {
-  return (
-    <div className="mandapasBgimages">
-      {data.map((item, index) => (
-        <div key={index} className="mandap-card">
-          <img src={item.image} alt={item.styel} className="mandap-image" />
-          <div className="mandap-details">
-            <h3>{item.styel}</h3>
-            <p>{item.description}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-};
+
 
 export default Background;
